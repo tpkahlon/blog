@@ -50,7 +50,6 @@ export function getStaticProps(context) {
 }
 
 export default function Home(props) {
-  console.log("props", props);
   if (!props || !props?.article?.fields?.name) return null;
   const date = new Date(props.article.sys.updatedAt);
   const isoDate = date.toISOString();
