@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
       <header>
         <nav>
           <Link href="/">Home</Link>
-          <a href="https://tpkahlon.netlify.app" rel="noopener noreferrer">
+          <a href="https://life-of-tej.netlify.app" rel="noopener noreferrer">
             Blog
           </a>
           <a href="https://github.com/tpkahlon" rel="noopener noreferrer">
