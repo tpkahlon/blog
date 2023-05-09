@@ -13,6 +13,12 @@ function MyApp({ Component, pageProps }) {
           <a href="https://github.com/tpkahlon" rel="noopener noreferrer">
             Github
           </a>
+          <a
+            href="https://www.udemy.com/user/54dbc56d3b1f0"
+            rel="noopener noreferrer"
+          >
+            Udemy
+          </a>
         </nav>
       </header>
       <Component {...pageProps} />
