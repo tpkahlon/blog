@@ -1,54 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  color: inherit;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-html {
-  font: {
-    size: 16px;
-    family: sans-serif;
-  }
-}
-
-body {
-  font-size: 1rem;
-  color: grey;
-  background: black;
-}
-
-main {
-  gap: 1rem;
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-}
+@import url("~simpledotcss/simple.min.css");
 
 nav {
-  gap: 1rem;
-  margin: 1rem;
-  display: flex;
-}
-
-h1 {
-  margin: 1rem 0 0;
-}
-
-a {
-  gap: 1rem;
-  display: flex;
-  &:hover,
-  &:focus {
-    color: lighten(grey, 40%);
-  }
-}
-
-p {
-  line-height: 1.75;
-  margin: 1rem 0 0;
-  &:first-of-type {
-    margin-top: 0;
-  }
+  margin-left: -0.5rem;
 }

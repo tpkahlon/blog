@@ -7,7 +7,8 @@ export default function Home() {
     ({ fields: { name, slug }, sys: { id, updatedAt } }) => {
       const date = new Date(updatedAt);
       const isoDate = date.toISOString();
-      const time = `${isoDate.substring(0, 10)} ${isoDate.substring(11, 19)}`;
+      const time = isoDate.substring(0, 10);
+      // const time = `${isoDate.substring(0, 10)} ${isoDate.substring(11, 19)}`;
       return (
         <Link href={`/article/${slug}`} key={id}>
           <span>{time}</span>
