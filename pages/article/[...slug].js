@@ -8,7 +8,7 @@ import styles from "../../styles/Article.module.scss";
 const ImageComponent = ({ title, url }) => {
   return (
     <div className={styles.image}>
-      <Image src={`https://${url}`} alt={title} fill />
+      <Image src={`http:${url}`} alt={title} fill />
     </div>
   );
 };
