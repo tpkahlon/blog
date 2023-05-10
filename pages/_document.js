@@ -5,15 +5,15 @@ export default function Document() {
     <Html>
       <Head>
         <script
-          dangerouslySetInnerHTML={{
-            __html: `if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"tpkahlon",utcoffset:"-5"}))};sessionStorage.setItem("_swa","1");`,
-          }}
-        ></script>
+          src="https://cdn.counter.dev/script.js"
+          data-id="609bef29-f039-4bea-b906-2130067d225f"
+          data-utcoffset="-5"
+        />
         <meta
           name="description"
-          content="In this blog, Tej, a front-end developer with over two years of professional experience, shares insights into his world. Tej discusses the challenges he has faced as a developer, the skills he has developed over time, and the latest trends in the field. He also provides valuable advice for new developers who are just starting out. With Tej's experience and expertise, readers can gain a better understanding of what it takes to succeed in the front-end development world."
+          content="Crafting captivating digital experiences with the power of JavaScript, React, CSS and a passion for front-end excellence."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <body>
         <Main />

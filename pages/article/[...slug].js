@@ -1,29 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS } from "@contentful/rich-text-types";
 import data from "../../public/data.json";
-import styles from "../../styles/Article.module.scss";
-
-const ImageComponent = ({ title, url }) => {
-  return (
-    <div className={styles.image}>
-      <Image src={`http:${url}`} alt={title} fill />
-    </div>
-  );
-};
-
-const options = {
-  renderNode: {
-    [BLOCKS.EMBEDDED_ASSET]: (node) => {
-      const {
-        title,
-        file: { url },
-      } = node.data.target.fields;
-      return <ImageComponent title={title} url={url} />;
-    },
-  },
-};
+import ImageComponent from "../../components/ImageComponent";
 
 export function getStaticPaths() {
   const paths = data.fields.articles.map(({ fields: { slug } }) => {
@@ -54,12 +33,21 @@ export default function Home(props) {
   const date = new Date(props.article.sys.updatedAt);
   const isoDate = date.toISOString();
   const time = isoDate.substring(0, 10);
-  // const time = `${isoDate.substring(0, 10)} ${isoDate.substring(11, 19)}`;
+  const options = {
+    renderNode: {
+      [BLOCKS.EMBEDDED_ASSET]: (node) => {
+        const {
+          title,
+          file: { url },
+        } = node.data.target.fields;
+        return <ImageComponent title={title} url={url} />;
+      },
+    },
+  };
   return (
     <>
       <Head>
         <title>{props.article.fields.name} - Tej</title>
-        <meta name="description" content="Coming soon..." />
       </Head>
       <main>
         <header>

@@ -49,7 +49,7 @@
           "id": "10U6f7FQmmvijn0NsCZIjV",
           "type": "Entry",
           "createdAt": "2023-05-09T02:43:16.831Z",
-          "updatedAt": "2023-05-09T17:53:28.085Z",
+          "updatedAt": "2023-05-09T18:11:13.827Z",
           "environment": {
             "sys": {
               "id": "master",
@@ -57,7 +57,7 @@
               "linkType": "Environment"
             }
           },
-          "revision": 9,
+          "revision": 10,
           "contentType": {
             "sys": {
               "type": "Link",
@@ -71,577 +71,611 @@
           "name": "#1 - What are pages in Next.js?",
           "slug": "hello-world",
           "body": {
+            "nodeType": "document",
             "data": {},
             "content": [
               {
+                "nodeType": "paragraph",
                 "data": {},
                 "content": [
                   {
-                    "data": {},
+                    "nodeType": "text",
+                    "value": "In this article, we will explore the architecture of a Next.js starter application. We'll create a basic Next.js application using ",
                     "marks": [],
-                    "value": "In this article, we will explore the architecture of a Next.js starter application. We'll create a basic Next.js application using create-next-app and examine each of its files in detail.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {},
-                "content": [
+                    "data": {}
+                  },
                   {
-                    "data": {},
+                    "nodeType": "text",
+                    "value": "create-next-app",
                     "marks": [
                       {
                         "type": "code"
                       }
                     ],
-                    "value": "npx create-next-app test",
-                    "nodeType": "text"
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " and examine each of its files in detail.",
+                    "marks": [],
+                    "data": {}
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
               },
               {
+                "nodeType": "paragraph",
                 "data": {},
                 "content": [
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
+                    "value": "npx create-next-app test",
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
                     "value": "The command ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "npx create-next-app test",
-                    "nodeType": "text"
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": " will set up a boilerplate for our application. It will install React, ReactDOM, and Next.js behind the scenes. We can preview our application using the ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "npm run dev",
-                    "nodeType": "text"
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": " command. When we are ready to deploy our application to production, we can use the ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "npm run build",
-                    "nodeType": "text"
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": " command to create static files. We can then spin up a server to serve these static files using ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "npm start",
-                    "nodeType": "text"
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": ".",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
               },
               {
+                "nodeType": "paragraph",
                 "data": {},
                 "content": [
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": "Once our boilerplate files are ready, we'll see a ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "src",
-                    "nodeType": "text"
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": " folder where all of our application files will reside. Within this folder, we have an ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
+                    "nodeType": "text",
+                    "value": "_app.js",
                     "marks": [
                       {
                         "type": "code"
                       }
                     ],
-                    "value": "_app.js",
-                    "nodeType": "text"
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": " file which serves as the foundation of our application. Every page on our site will reference the ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "_app.js",
-                    "nodeType": "text"
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": " file. We can declare application-level components in this file, such as navigation, footer, and context API. ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
               },
               {
+                "nodeType": "paragraph",
                 "data": {},
                 "content": [
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": "Next, we have the ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
+                    "nodeType": "text",
+                    "value": "index.js",
                     "marks": [
                       {
                         "type": "code"
                       }
                     ],
-                    "value": "index.js",
-                    "nodeType": "text"
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": " file, which is the home page of our application. All code specific to the home page of the app will be present in this file. Additionally, we can create a ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
+                    "nodeType": "text",
+                    "value": "[slug].js",
                     "marks": [
                       {
                         "type": "code"
                       }
                     ],
-                    "value": "[slug].js",
-                    "nodeType": "text"
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": " and a ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
+                    "nodeType": "text",
+                    "value": "[...slug].js",
                     "marks": [
                       {
                         "type": "code"
                       }
                     ],
-                    "value": "[...slug].js",
-                    "nodeType": "text"
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": " file at the root level. These files will capture all the paths that users attempt to visit on our application, and we can display a specific template for those paths using these files. ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
               },
               {
+                "nodeType": "paragraph",
                 "data": {},
                 "content": [
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": "The ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "[slug].js",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {},
-                    "marks": [],
-                    "value": " file can only capture the immediate path after the forward slash, e.g., `test.com/xyz`, where ",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {},
                     "marks": [
                       {
                         "type": "code"
                       }
                     ],
-                    "value": "xyz",
-                    "nodeType": "text"
+                    "data": {}
                   },
                   {
-                    "data": {},
+                    "nodeType": "text",
+                    "value": " file can only capture the immediate path after the forward slash, e.g., ",
                     "marks": [],
-                    "value": " is the path that will be captured by the ",
-                    "nodeType": "text"
+                    "data": {}
                   },
                   {
-                    "data": {},
+                    "nodeType": "text",
+                    "value": "test.com/xyz",
                     "marks": [
                       {
                         "type": "code"
                       }
                     ],
-                    "value": "[slug].js",
-                    "nodeType": "text"
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
-                    "value": " file. On the other hand, all nested paths can be captured by the ",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": "[...slug].js",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {},
-                    "marks": [],
-                    "value": " file, e.g., ",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": "test.com/xyz/abc/def",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": ", where ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
+                    "nodeType": "text",
+                    "value": "xyz",
                     "marks": [
                       {
                         "type": "code"
                       }
                     ],
-                    "value": "['xyz', 'abc','def']",
-                    "nodeType": "text"
+                    "data": {}
                   },
                   {
-                    "data": {},
+                    "nodeType": "text",
+                    "value": " is the path that will be captured by the ",
                     "marks": [],
-                    "value": " paths are captured in the ",
-                    "nodeType": "text"
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "value": "[...slug]",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {},
-                    "marks": [],
-                    "value": " file in the form of an array.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {},
-                "content": [
-                  {
-                    "data": {},
-                    "marks": [],
-                    "value": "In the ",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "[slug].js",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {},
-                    "marks": [],
-                    "value": " and ",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {},
                     "marks": [
                       {
                         "type": "code"
                       }
                     ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " file. On the other hand, all nested paths can be captured by the ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
                     "value": "[...slug].js",
-                    "nodeType": "text"
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
                   },
                   {
-                    "data": {},
+                    "nodeType": "text",
+                    "value": " file, e.g., ",
                     "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "test.com/xyz/abc/def",
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ", where ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "['xyz', 'abc','def']",
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " paths are captured in the ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "[...slug]",
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " file in the form of an array.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "In the ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "[slug].js",
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " and ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "[...slug].js",
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
                     "value": " files, we can utilize three distinct functions: ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
+                    "nodeType": "text",
+                    "value": "getStaticPaths",
                     "marks": [
                       {
                         "type": "code"
                       }
                     ],
-                    "value": "getStaticPaths",
-                    "nodeType": "text"
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": ", ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
+                    "nodeType": "text",
+                    "value": "getStaticProps",
                     "marks": [
                       {
                         "type": "code"
                       }
                     ],
-                    "value": "getStaticProps",
-                    "nodeType": "text"
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": ", and a default anonymous function that is exported.",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
               },
               {
+                "nodeType": "paragraph",
                 "data": {},
                 "content": [
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": "The ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "getStaticPaths",
-                    "nodeType": "text"
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": " function is responsible for generating pages from all available slugs in our site data. This function always returns an object with two keys: ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "paths",
-                    "nodeType": "text"
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": " (an array) and ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "fallback",
-                    "nodeType": "text"
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": " (a boolean).",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
               },
               {
+                "nodeType": "paragraph",
                 "data": {},
                 "content": [
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": "The ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "getStaticProps",
-                    "nodeType": "text"
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": " function allows us to pass a specific data-set to our default anonymous function, which consumes the data-set and displays markup on the page. The return type of this function is an object with a ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "props",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {},
-                    "marks": [],
-                    "value": " key whose value is also an object.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {},
-                "content": [
-                  {
-                    "data": {},
-                    "marks": [],
-                    "value": "The default exported function is responsible for rendering the markup on the page.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {},
-                "content": [
-                  {
-                    "data": {},
-                    "marks": [],
-                    "value": "Here is an example of an ",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {},
                     "marks": [
                       {
                         "type": "code"
                       }
                     ],
-                    "value": "index.js",
-                    "nodeType": "text"
+                    "data": {}
                   },
                   {
-                    "data": {},
+                    "nodeType": "text",
+                    "value": " key whose value is also an object.",
                     "marks": [],
-                    "value": " file showcasing a default exported function that displays some markup on the homepage.",
-                    "nodeType": "text"
+                    "data": {}
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
               },
               {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "The default exported function is responsible for rendering the markup on the page.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Here is an example of an ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "index.js",
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " file showcasing a default exported function that displays some markup on the homepage.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "embedded-asset-block",
                 "data": {
                   "target": {
                     "metadata": {
@@ -687,70 +721,70 @@
                     }
                   }
                 },
-                "content": [],
-                "nodeType": "embedded-asset-block"
+                "content": []
               },
               {
+                "nodeType": "paragraph",
                 "data": {},
                 "content": [
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": "Here is an example of a ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "[...slug].js",
-                    "nodeType": "text"
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": " file for an article page, featuring a default exported function that displays some markup on the page. It also includes ",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   },
                   {
-                    "data": {},
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
+                    "nodeType": "text",
                     "value": "getStaticPaths",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {},
-                    "marks": [],
-                    "value": " and ",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {},
                     "marks": [
                       {
                         "type": "code"
                       }
                     ],
-                    "value": "getStaticProps",
-                    "nodeType": "text"
+                    "data": {}
                   },
                   {
-                    "data": {},
+                    "nodeType": "text",
+                    "value": " and ",
                     "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "getStaticProps",
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
                     "value": " functions.",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
               },
               {
+                "nodeType": "embedded-asset-block",
                 "data": {
                   "target": {
                     "metadata": {
@@ -796,23 +830,21 @@
                     }
                   }
                 },
-                "content": [],
-                "nodeType": "embedded-asset-block"
+                "content": []
               },
               {
+                "nodeType": "paragraph",
                 "data": {},
                 "content": [
                   {
-                    "data": {},
-                    "marks": [],
+                    "nodeType": "text",
                     "value": "",
-                    "nodeType": "text"
+                    "marks": [],
+                    "data": {}
                   }
-                ],
-                "nodeType": "paragraph"
+                ]
               }
-            ],
-            "nodeType": "document"
+            ]
           }
         }
       }
