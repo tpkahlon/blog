@@ -10,12 +10,13 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div>
-          <h2>Hello!</h2>
+          <h1>Hello!</h1>
           <p>
             Hello, I'm Tej. I'm a developer who enjoys indulging in chai,
             writing, and blogging. I have a passion for web development, gaming,
             and cricket. I'm thrilled to have the opportunity to meet you.
           </p>
+          <hr />
           <h2>Development</h2>
           <p>
             You can find me on{" "}

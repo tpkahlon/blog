@@ -44,15 +44,17 @@ export default function Home(props) {
       },
     },
   };
+  const titleName = `${props.article.fields.name} - Tej`;
   return (
     <>
       <Head>
-        <title>{props.article.fields.name} - Tej</title>
+        <title>{titleName}</title>
       </Head>
       <main>
         <header>
           <h1>{props.article.fields.name}</h1>
           <small>{time}</small>
+          <hr />
         </header>
         <div>
           {documentToReactComponents(props.article.fields.body, options)}

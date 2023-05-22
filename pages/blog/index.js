@@ -9,9 +9,10 @@ export default function Home() {
       const date = new Date(updatedAt);
       const isoDate = date.toISOString();
       const time = isoDate.substring(0, 10);
+      const href = `/article/${slug}`;
       return (
         <div key={id}>
-          <Link href={`/article/${slug}`}>{name}</Link>
+          <Link href={href}>{name}</Link>
           <small>{time}</small>
         </div>
       );
@@ -23,6 +24,9 @@ export default function Home() {
         <title>Blog - Tej</title>
       </Head>
       <main className={styles.main}>
+        <h1>Blog</h1>
+        <hr />
+        <h2>Archive</h2>
         <div className={styles.articles}>{articles}</div>
       </main>
     </>
