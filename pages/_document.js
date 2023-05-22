@@ -13,7 +13,7 @@ export default function Document() {
           name="description"
           content="Crafting captivating digital experiences with the power of JavaScript, React, CSS and a passion for front-end excellence."
         />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />

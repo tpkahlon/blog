@@ -1,15 +1,18 @@
+import Image from "next/image";
 import Link from "next/link";
 import "../styles/globals.scss";
+import styles from "../styles/Home.module.scss";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <header>
+      <header className={styles.nav}>
+        <div className={styles.image}>
+          <Image src="/banner.jpg" alt="Banner" fill />
+        </div>
         <nav>
           <Link href="/">Home</Link>
-          <a href="https://tpkahlon.netlify.app" rel="noopener noreferrer">
-            Blog
-          </a>
+          <Link href="/blog">Blog</Link>
           <a href="https://github.com/tpkahlon" rel="noopener noreferrer">
             Github
           </a>

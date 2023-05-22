@@ -49,7 +49,7 @@
           "id": "10U6f7FQmmvijn0NsCZIjV",
           "type": "Entry",
           "createdAt": "2023-05-09T02:43:16.831Z",
-          "updatedAt": "2023-05-09T18:11:13.827Z",
+          "updatedAt": "2023-05-10T00:24:39.219Z",
           "environment": {
             "sys": {
               "id": "master",
@@ -57,7 +57,7 @@
               "linkType": "Environment"
             }
           },
-          "revision": 10,
+          "revision": 13,
           "contentType": {
             "sys": {
               "type": "Link",
@@ -68,8 +68,8 @@
           "locale": "en-US"
         },
         "fields": {
-          "name": "#1 - What are pages in Next.js?",
-          "slug": "hello-world",
+          "name": "#1 - What are Pages in Next.js?",
+          "slug": "what-are-pages-in-nextjs",
           "body": {
             "nodeType": "document",
             "data": {},
@@ -729,23 +729,7 @@
                 "content": [
                   {
                     "nodeType": "text",
-                    "value": "Here is an example of a ",
-                    "marks": [],
-                    "data": {}
-                  },
-                  {
-                    "nodeType": "text",
-                    "value": "[...slug].js",
-                    "marks": [
-                      {
-                        "type": "code"
-                      }
-                    ],
-                    "data": {}
-                  },
-                  {
-                    "nodeType": "text",
-                    "value": " file for an article page, featuring a default exported function that displays some markup on the page. It also includes ",
+                    "value": "Here is a screenshot attached, showing the ",
                     "marks": [],
                     "data": {}
                   },
@@ -761,13 +745,13 @@
                   },
                   {
                     "nodeType": "text",
-                    "value": " and ",
+                    "value": " function in a Next.js app, primarily used for files with the naming format of ",
                     "marks": [],
                     "data": {}
                   },
                   {
                     "nodeType": "text",
-                    "value": "getStaticProps",
+                    "value": "[...slug].js",
                     "marks": [
                       {
                         "type": "code"
@@ -777,7 +761,23 @@
                   },
                   {
                     "nodeType": "text",
-                    "value": " functions.",
+                    "value": " or ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "[slug].js",
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ".",
                     "marks": [],
                     "data": {}
                   }
@@ -801,7 +801,116 @@
                       "id": "1189iMHsrYlBKBiNgWvXpd",
                       "type": "Asset",
                       "createdAt": "2023-05-09T17:50:32.545Z",
-                      "updatedAt": "2023-05-09T17:50:32.545Z",
+                      "updatedAt": "2023-05-10T00:19:08.319Z",
+                      "environment": {
+                        "sys": {
+                          "id": "master",
+                          "type": "Link",
+                          "linkType": "Environment"
+                        }
+                      },
+                      "revision": 3,
+                      "locale": "en-US"
+                    },
+                    "fields": {
+                      "title": "Snapshot - getStaticPaths - Next.JS",
+                      "description": "Snapshot - getStaticPaths - Next.JS file",
+                      "file": {
+                        "url": "//images.ctfassets.net/rv8g4s0yjblf/1189iMHsrYlBKBiNgWvXpd/a2959eafc1cb87fb14b49b1e7abb398e/Screenshot_2023-05-09_at_8.17.16_PM.png",
+                        "details": {
+                          "size": 361719,
+                          "image": {
+                            "width": 2032,
+                            "height": 1192
+                          }
+                        },
+                        "fileName": "Screenshot 2023-05-09 at 8.17.16 PM.png",
+                        "contentType": "image/png"
+                      }
+                    }
+                  }
+                },
+                "content": []
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Here is a screenshot attached, showing the ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "getStaticProps",
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " function in a Next.js app, primarily used for files with the naming format of ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "[...slug].js",
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " or ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "[slug].js",
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ".",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "embedded-asset-block",
+                "data": {
+                  "target": {
+                    "metadata": {
+                      "tags": []
+                    },
+                    "sys": {
+                      "space": {
+                        "sys": {
+                          "type": "Link",
+                          "linkType": "Space",
+                          "id": "rv8g4s0yjblf"
+                        }
+                      },
+                      "id": "3xU9dMdAxFRe2jkmpRyS8f",
+                      "type": "Asset",
+                      "createdAt": "2023-05-10T00:19:53.024Z",
+                      "updatedAt": "2023-05-10T00:19:53.024Z",
                       "environment": {
                         "sys": {
                           "id": "master",
@@ -813,18 +922,18 @@
                       "locale": "en-US"
                     },
                     "fields": {
-                      "title": "Snapshot - Dynamic page - Next.JS",
-                      "description": "Snapshot - Dynamic page - Next.JS file",
+                      "title": "Snapshot - getStaticProps - Next.JS",
+                      "description": "Snapshot - getStaticProps - Next.JS file",
                       "file": {
-                        "url": "//images.ctfassets.net/rv8g4s0yjblf/1189iMHsrYlBKBiNgWvXpd/3de0431744d3964fb428c978796f089a/Screenshot_2023-05-09_at_1.50.04_PM.png",
+                        "url": "//images.ctfassets.net/rv8g4s0yjblf/3xU9dMdAxFRe2jkmpRyS8f/eeaa134557bf4ef2fd613afa2667f233/Screenshot_2023-05-09_at_8.15.17_PM.png",
                         "details": {
-                          "size": 1093813,
+                          "size": 333738,
                           "image": {
-                            "width": 3584,
-                            "height": 2274
+                            "width": 2032,
+                            "height": 1192
                           }
                         },
-                        "fileName": "Screenshot 2023-05-09 at 1.50.04 PM.png",
+                        "fileName": "Screenshot 2023-05-09 at 8.15.17 PM.png",
                         "contentType": "image/png"
                       }
                     }

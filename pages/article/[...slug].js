@@ -51,8 +51,8 @@ export default function Home(props) {
       </Head>
       <main>
         <header>
-          <small>{time}</small>
           <h1>{props.article.fields.name}</h1>
+          <small>{time}</small>
         </header>
         <div>
           {documentToReactComponents(props.article.fields.body, options)}

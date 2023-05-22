@@ -1,10 +1,42 @@
 @import url("~simpledotcss/simple.min.css");
 
-nav {
-  margin-left: -0.5rem;
-}
-
 a {
   gap: 1rem;
   display: flex;
+}
+
+body {
+  border-top: 10px solid rgba(#ffb300, 25%);
+}
+
+main {
+  margin: 1.5rem 0 0;
+  padding: 2rem 0 0;
+  border-top: 10px solid rgba(#ffb300, 25%);
+}
+
+h1,
+h2,
+h3 {
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+p {
+  > a {
+    display: inline;
+  }
+}
+
+strong {
+  color: var(--accent);
+}
+
+h1 {
+  + small {
+    display: block;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+  }
 }

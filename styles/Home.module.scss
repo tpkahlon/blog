@@ -1,0 +1,28 @@
+.image {
+  position: relative;
+  width: auto;
+  min-height: 400px;
+  max-height: 600px;
+  margin: 2rem 0.5rem 1rem;
+  img {
+    object-fit: cover;
+  }
+}
+
+.nav {
+  margin-left: -0.5rem;
+}
+
+.tagline {
+  margin-bottom: 3rem;
+}
+
+.link {
+  display: inline;
+}
+
+.articles {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+}
