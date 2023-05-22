@@ -32,9 +32,9 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className={styles.link}
               >
-                <strong>Jackal:</strong>
+                <strong>Jackal</strong>
               </a>
-              &nbsp; Explore TV content beyond limitations.
+              : &nbsp; Explore TV content beyond limitations.
             </li>
             <li>
               <a
@@ -42,9 +42,9 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className={styles.link}
               >
-                <strong>CS1000:</strong>
+                <strong>CS1000</strong>
               </a>
-              &nbsp;A beginner's reference site offering insights into various
+              : &nbsp;A beginner's reference site offering insights into various
               subjects in CS and Software Engineering. It serves as a helpful
               resource for students to supplement their undergraduate programs.
             </li>
@@ -54,9 +54,10 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className={styles.link}
               >
-                <strong>Github-Unstar:</strong>
+                <strong>Github-Unstar</strong>
               </a>
-              &nbsp;Quickly unstar all your GitHub repositories within seconds.
+              : &nbsp;Quickly unstar all your GitHub repositories within
+              seconds.
             </li>
           </ul>
           <h2>Teaching</h2>
@@ -78,9 +79,9 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className={styles.link}
               >
-                <strong>Master Contentful:</strong>
+                <strong>Master Contentful</strong>
               </a>
-              &nbsp; Enroll in this Udemy course to learn the fundamentals of
+              : &nbsp; Enroll in this Udemy course to learn the fundamentals of
               Contentful CMS.
             </li>
           </ul>
