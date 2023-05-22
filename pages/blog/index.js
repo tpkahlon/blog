@@ -10,10 +10,8 @@ export default function Home() {
       const isoDate = date.toISOString();
       const time = isoDate.substring(0, 10);
       return (
-        <div>
-          <Link href={`/article/${slug}`} key={id}>
-            {name}
-          </Link>
+        <div key={id}>
+          <Link href={`/article/${slug}`}>{name}</Link>
           <small>{time}</small>
         </div>
       );
