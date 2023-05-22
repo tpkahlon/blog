@@ -9,12 +9,16 @@ body {
   border-top: 10px solid rgba(#ffb300, 25%);
 }
 
+main {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(#ffb300, 25%);
+}
+
 header {
   text-align: center;
-  margin: 2rem 0;
-  padding: 2rem 0;
+  margin: 0 0 2rem;
+  padding: 2rem 0 1rem;
   margin-left: -0.5rem;
-  border-top: 1px solid rgba(#ffb300, 25%);
 }
 
 h1,

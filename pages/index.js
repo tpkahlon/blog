@@ -9,7 +9,7 @@ export default function Home() {
         <title>Home - Tej</title>
       </Head>
       <main className={styles.main}>
-        <div className={styles.tagline}>
+        <div>
           <h2>Hello!</h2>
           <p>
             Hello, I'm Tej. I'm a developer who enjoys indulging in chai,
