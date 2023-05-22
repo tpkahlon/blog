@@ -1,16 +1,13 @@
 .image {
   position: relative;
   width: auto;
-  min-height: 400px;
-  max-height: 600px;
-  margin: 2rem 0.5rem 1rem;
+  min-height: 300px;
+  max-height: 300px;
+  margin: 2rem 0 0;
   img {
     object-fit: cover;
+    object-position: bottom;
   }
-}
-
-.nav {
-  margin-left: -0.5rem;
 }
 
 .tagline {

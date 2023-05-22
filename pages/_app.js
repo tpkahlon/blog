@@ -6,10 +6,8 @@ import styles from "../styles/Home.module.scss";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <header className={styles.nav}>
-        <div className={styles.image}>
-          <Image src="/banner.jpg" alt="Banner" fill />
-        </div>
+      <Component {...pageProps} />
+      <header>
         <nav>
           <Link href="/">Home</Link>
           <Link href="/blog">Blog</Link>
@@ -23,8 +21,10 @@ function MyApp({ Component, pageProps }) {
             Udemy
           </a>
         </nav>
+        <div className={styles.image}>
+          <Image src="/banner.jpg" alt="Banner" fill />
+        </div>
       </header>
-      <Component {...pageProps} />
     </>
   );
 }
