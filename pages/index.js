@@ -86,9 +86,10 @@ export default function Home() {
           <h2>Writing</h2>
           <p>
             You can see all of my articles&nbsp;
-            <Link href="/blog">here</Link>. Here are some notable ones:
+            <Link href="/blog">here</Link>.
+            {/* <Link href="/blog">here</Link>. Here are some notable ones: */}
           </p>
-          <ul>
+          {/* <ul>
             <li>
               <Link
                 href="/article/what-are-pages-in-nextjs"
@@ -97,7 +98,7 @@ export default function Home() {
                 <strong>What are Pages in Next.js?:</strong>
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </main>
     </>
