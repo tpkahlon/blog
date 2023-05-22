@@ -34,7 +34,7 @@ export default function Home() {
               >
                 <strong>Jackal</strong>
               </a>
-              : &nbsp; Explore TV content beyond limitations.
+              : Explore TV content beyond limitations.
             </li>
             <li>
               <a
@@ -44,7 +44,7 @@ export default function Home() {
               >
                 <strong>CS1000</strong>
               </a>
-              : &nbsp;A beginner's reference site offering insights into various
+              : A beginner's reference site offering insights into various
               subjects in CS and Software Engineering. It serves as a helpful
               resource for students to supplement their undergraduate programs.
             </li>
@@ -56,7 +56,7 @@ export default function Home() {
               >
                 <strong>Github-Unstar</strong>
               </a>
-              : &nbsp;Quickly unstar all your GitHub repositories within
+              : Quickly unstar all your GitHub repositories within
               seconds.
             </li>
           </ul>
@@ -81,7 +81,7 @@ export default function Home() {
               >
                 <strong>Master Contentful</strong>
               </a>
-              : &nbsp; Enroll in this Udemy course to learn the fundamentals of
+              : Enroll in this Udemy course to learn the fundamentals of
               Contentful CMS.
             </li>
           </ul>
