@@ -2,5 +2,10 @@
   position: relative;
   width: 100%;
   height: auto;
-  aspect-ratio: 3/2;
+  aspect-ratio: 16/9;
+  margin: 2rem 0;
+  background: rgba(black, 50%);
+  img {
+    object-fit: contain;
+  }
 }

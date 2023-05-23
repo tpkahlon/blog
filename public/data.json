@@ -10,23 +10,23 @@
         "id": "rv8g4s0yjblf"
       }
     },
-    "id": "4XjDJnEsZKKUtzuFP2owgn",
     "type": "Entry",
-    "createdAt": "2023-05-09T02:42:48.521Z",
-    "updatedAt": "2023-05-22T21:25:13.786Z",
-    "environment": {
-      "sys": {
-        "id": "master",
-        "type": "Link",
-        "linkType": "Environment"
-      }
-    },
-    "revision": 3,
+    "id": "4XjDJnEsZKKUtzuFP2owgn",
     "contentType": {
       "sys": {
         "type": "Link",
         "linkType": "ContentType",
         "id": "site"
+      }
+    },
+    "revision": 3,
+    "createdAt": "2023-05-09T02:42:35.485Z",
+    "updatedAt": "2023-05-23T02:52:22.988Z",
+    "environment": {
+      "sys": {
+        "id": "master",
+        "type": "Link",
+        "linkType": "Environment"
       }
     },
     "locale": "en-US"
@@ -46,23 +46,23 @@
               "id": "rv8g4s0yjblf"
             }
           },
-          "id": "10U6f7FQmmvijn0NsCZIjV",
           "type": "Entry",
-          "createdAt": "2023-05-09T02:43:16.831Z",
+          "id": "10U6f7FQmmvijn0NsCZIjV",
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "article"
+            }
+          },
+          "revision": 25,
+          "createdAt": "2023-05-09T02:42:52.097Z",
           "updatedAt": "2023-05-22T20:37:17.715Z",
           "environment": {
             "sys": {
               "id": "master",
               "type": "Link",
               "linkType": "Environment"
-            }
-          },
-          "revision": 25,
-          "contentType": {
-            "sys": {
-              "type": "Link",
-              "linkType": "ContentType",
-              "id": "article"
             }
           },
           "locale": "en-US"
@@ -566,23 +566,23 @@
               "id": "rv8g4s0yjblf"
             }
           },
-          "id": "1Ql3caCLCaCsLSK2ixVPtT",
           "type": "Entry",
-          "createdAt": "2023-05-22T21:23:19.684Z",
+          "id": "1Ql3caCLCaCsLSK2ixVPtT",
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "article"
+            }
+          },
+          "revision": 2,
+          "createdAt": "2023-05-22T21:09:24.818Z",
           "updatedAt": "2023-05-22T21:26:51.374Z",
           "environment": {
             "sys": {
               "id": "master",
               "type": "Link",
               "linkType": "Environment"
-            }
-          },
-          "revision": 2,
-          "contentType": {
-            "sys": {
-              "type": "Link",
-              "linkType": "ContentType",
-              "id": "article"
             }
           },
           "locale": "en-US"
@@ -917,6 +917,141 @@
                   {
                     "nodeType": "text",
                     "value": "These five NPM packages are fundamental components of the Contentful ecosystem. Incorporating them into your development workflow will enhance your ability to interact with Contentful, streamline your processes, and boost productivity. Whether you're fetching content, managing data models, executing CLI operations, resolving linked references, or tracking content model changes, these packages will be invaluable assets in your Contentful toolkit. Embrace these tools and unlock the full potential of Contentful in your applications.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "rv8g4s0yjblf"
+            }
+          },
+          "type": "Entry",
+          "id": "2hWrxkRPWR4bIBQuw5H0sH",
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "article"
+            }
+          },
+          "revision": 0,
+          "createdAt": "2023-05-23T02:51:22.028Z",
+          "updatedAt": "2023-05-23T03:08:57.115Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "name": "Test",
+          "slug": "test",
+          "body": {
+            "nodeType": "document",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "embedded-asset-block",
+                "data": {
+                  "target": {
+                    "metadata": {
+                      "tags": []
+                    },
+                    "sys": {
+                      "space": {
+                        "sys": {
+                          "type": "Link",
+                          "linkType": "Space",
+                          "id": "rv8g4s0yjblf"
+                        }
+                      },
+                      "type": "Asset",
+                      "id": "3xU9dMdAxFRe2jkmpRyS8f",
+                      "revision": 1,
+                      "createdAt": "2023-05-10T00:19:24.761Z",
+                      "updatedAt": "2023-05-10T00:19:53.024Z",
+                      "environment": {
+                        "sys": {
+                          "id": "master",
+                          "type": "Link",
+                          "linkType": "Environment"
+                        }
+                      },
+                      "locale": "en-US"
+                    },
+                    "fields": {
+                      "title": "Snapshot - getStaticProps - Next.JS",
+                      "description": "Snapshot - getStaticProps - Next.JS file",
+                      "file": {
+                        "url": "//images.ctfassets.net/rv8g4s0yjblf/3xU9dMdAxFRe2jkmpRyS8f/eeaa134557bf4ef2fd613afa2667f233/Screenshot_2023-05-09_at_8.15.17_PM.png",
+                        "details": {
+                          "size": 333738,
+                          "image": {
+                            "width": 2032,
+                            "height": 1192
+                          }
+                        },
+                        "fileName": "Screenshot 2023-05-09 at 8.15.17 PM.png",
+                        "contentType": "image/png"
+                      }
+                    }
+                  }
+                },
+                "content": []
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Test body",
+                    "marks": [],
+                    "data": {}
+                  }
+                ]
+              },
+              {
+                "nodeType": "blockquote",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "paragraph",
+                    "data": {},
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "export function getStaticProps(context) {\n  const [article] = data.fields.articles.filter(({ fields: { slug } }) => {\n    return slug === context.params.slug.join(\"\");\n  });\n  return {\n    props: {\n      article,\n    },\n  };\n}",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {},
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
                     "marks": [],
                     "data": {}
                   }

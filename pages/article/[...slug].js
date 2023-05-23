@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { BLOCKS } from "@contentful/rich-text-types";
+import { BLOCKS, MARKS } from "@contentful/rich-text-types";
 import data from "../../public/data.json";
 import ImageComponent from "../../components/ImageComponent";
 
@@ -35,6 +35,12 @@ export default function Home(props) {
   const time = isoDate.substring(0, 10);
   const options = {
     renderNode: {
+      [BLOCKS.QUOTE]: (node) => {
+        const code = node.content
+          .map((i) => i.content.map((j) => j.value).join(""))
+          .join("\n");
+        return <pre>{code}</pre>;
+      },
       [BLOCKS.EMBEDDED_ASSET]: (node) => {
         const {
           title,
