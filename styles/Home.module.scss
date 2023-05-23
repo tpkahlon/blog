@@ -3,9 +3,12 @@
 }
 
 .nav {
-  gap: 1rem;
+  gap: 0 1rem;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  max-width: 75vw;
+  margin: auto;
 }
 
 .image {

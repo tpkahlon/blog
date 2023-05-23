@@ -17,6 +17,13 @@ function MyApp({ Component, pageProps }) {
               Blog
             </Link>
             <a
+              href="https://twitter.com/iamtejkahlon"
+              rel="noopener noreferrer"
+              className="button"
+            >
+              Twitter
+            </a>
+            <a
               href="https://github.com/tpkahlon"
               rel="noopener noreferrer"
               className="button"
