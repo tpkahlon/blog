@@ -1,17 +1,7 @@
 @import url("~simpledotcss/simple.min.css");
 
-a {
-  gap: 1rem;
-  display: flex;
-}
-
 body {
   border-top: 10px solid var(--border);
-}
-
-main {
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--border);
 }
 
 header {
@@ -19,6 +9,16 @@ header {
   margin: 0 0 1rem;
   padding: 2rem 0 1rem;
   margin-left: -0.5rem;
+}
+
+main {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+a {
+  gap: 1rem;
+  display: flex;
 }
 
 p {

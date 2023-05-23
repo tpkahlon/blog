@@ -1,21 +1,30 @@
-.image {
-  position: relative;
-  width: auto;
-  min-height: 200px;
-  max-height: 200px;
-  margin: 0 0 3rem;
-  img {
-    object-fit: cover;
-    object-position: bottom;
-  }
-}
-
 .link {
   display: inline;
 }
 
-.articles {
+.nav {
+  gap: 1rem;
   display: flex;
+  justify-content: center;
+}
+
+.image {
+  position: relative;
+  width: auto;
+  min-height: 225px;
+  max-height: 225px;
+  margin: 3rem auto 0;
+  max-width: 225px;
+  img {
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: bottom;
+    border: 10px solid var(--border);
+  }
+}
+
+.articles {
   gap: 1.5rem;
+  display: flex;
   flex-direction: column;
 }

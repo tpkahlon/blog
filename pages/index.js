@@ -10,12 +10,15 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div>
-          <h1>Hello!</h1>
-          <p>
-            Hello, I'm Tej. I'm a developer who enjoys indulging in chai,
-            writing, and blogging. I have a passion for web development, gaming,
-            and cricket. I'm thrilled to have the opportunity to meet you.
-          </p>
+          <header>
+            <h1>Hello!</h1>
+            <p>
+              Hello, I'm Tej. I'm a developer who enjoys indulging in chai,
+              writing, and blogging. I have a passion for web development,
+              gaming, and cricket. I'm thrilled to have the opportunity to meet
+              you.
+            </p>
+          </header>
           <hr />
           <h2>Development</h2>
           <p>
@@ -56,8 +59,7 @@ export default function Home() {
               >
                 <strong>Github-Unstar</strong>
               </a>
-              : Quickly unstar all your GitHub repositories within
-              seconds.
+              : Quickly unstar all your GitHub repositories within seconds.
             </li>
           </ul>
           <h2>Teaching</h2>

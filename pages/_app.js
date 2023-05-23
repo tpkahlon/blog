@@ -9,23 +9,32 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <div>
         <header>
-          <nav role="navigation">
-            <Link href="/">Home</Link>
-            <Link href="/blog">Blog</Link>
-            <a href="https://github.com/tpkahlon" rel="noopener noreferrer">
-              Github
+          <nav role="navigation" className={styles.nav}>
+            <Link href="/" className="button">
+              Home
+            </Link>
+            <Link href="/blog" className="button">
+              Blog
+            </Link>
+            <a
+              href="https://github.com/tpkahlon"
+              rel="noopener noreferrer"
+              className="button"
+            >
+              GitHub
             </a>
             <a
               href="https://www.udemy.com/user/54dbc56d3b1f0"
               rel="noopener noreferrer"
+              className="button"
             >
               Udemy
             </a>
           </nav>
+          <div className={styles.image}>
+            <Image src="/banner.jpg" alt="Banner" fill />
+          </div>
         </header>
-        <div className={styles.image}>
-          <Image src="/banner.jpg" alt="Banner" fill />
-        </div>
       </div>
     </>
   );
