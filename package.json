@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "data": "node contentful",
+    "data": "cross-env SPACE=$SPACE CDATOKEN=$CDATOKEN CPATOKEN=$CPATOKEN node contentful",
     "dev": "npm run data && next dev",
     "build": "npm run data && next build",
     "start": "next start"
@@ -12,6 +12,7 @@
     "@contentful/rich-text-react-renderer": "^15.16.4",
     "@contentful/rich-text-types": "^16.1.0",
     "contentful": "^10.1.8",
+    "cross-env": "^7.0.3",
     "next": "13.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
