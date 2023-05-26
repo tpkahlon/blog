@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { BLOCKS, MARKS } from "@contentful/rich-text-types";
+import { BLOCKS } from "@contentful/rich-text-types";
 import data from "../../public/data.json";
 import ImageComponent from "../../components/ImageComponent";
 

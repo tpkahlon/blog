@@ -5,15 +5,15 @@ const { ENVIRONMENT } = process.env;
 const options =
   ENVIRONMENT === "local"
     ? {
-        space: "rv8g4s0yjblf",
         environment: "master",
-        accessToken: "z1ndlIRQT8C5eynhI1BsKRf44hqINVkj0MkRSW6cGC0",
         host: "preview.contentful.com",
+        space: process.env.SPACE,
+        accessToken: process.env.CPATOKEN,
       }
     : {
-        space: "rv8g4s0yjblf",
         environment: "master",
-        accessToken: "9LGAzdfrZ9Di11IXb65jePOEw1J9I4ZQcrZBiR2Ugjw",
+        space: process.env.SPACE,
+        accessToken: process.env.CDATOKEN,
       };
 
 const client = createClient(options);
