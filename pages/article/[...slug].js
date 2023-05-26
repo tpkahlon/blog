@@ -2,7 +2,6 @@ import Head from "next/head";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS } from "@contentful/rich-text-types";
 import data from "../../public/data.json";
-import ImageComponent from "../../components/ImageComponent";
 
 export function getStaticPaths() {
   const paths = data.fields.articles.map(({ fields: { slug } }) => {
@@ -40,13 +39,6 @@ export default function Home(props) {
           .map((i) => i.content.map((j) => j.value).join(""))
           .join("\n");
         return <pre>{code}</pre>;
-      },
-      [BLOCKS.EMBEDDED_ASSET]: (node) => {
-        const {
-          title,
-          file: { url },
-        } = node.data.target.fields;
-        return <ImageComponent title={title} url={url} />;
       },
     },
   };
