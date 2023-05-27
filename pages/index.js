@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.scss";
+import data from "../public/data.json";
 
 export default function Home() {
   return (
@@ -12,12 +13,7 @@ export default function Home() {
         <div>
           <header>
             <h1>Hello!</h1>
-            <p>
-              Hello, I'm Tej. I'm a developer who enjoys indulging in chai,
-              writing, and blogging. I have a passion for web development,
-              gaming, and cricket. I'm thrilled to have the opportunity to meet
-              you.
-            </p>
+            <p>{data.fields.name}</p>
           </header>
           <hr />
           <h2>Development</h2>
