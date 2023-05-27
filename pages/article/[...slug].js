@@ -36,13 +36,16 @@ export default function Home(props) {
     renderNode: {
       [BLOCKS.QUOTE]: (node) => {
         const code = node.content
-          .map((i) => i.content.map((j) => j.value).join(""))
+          .map((block) =>
+            block.content.map((element) => element.value).join("")
+          )
           .join("\n");
         return <pre>{code}</pre>;
       },
     },
   };
-  const titleName = `${props.article.fields.name} - Tej`;
+  const { body, name } = props.article.fields;
+  const titleName = `${name} - Tej`;
   return (
     <>
       <Head>
@@ -50,13 +53,11 @@ export default function Home(props) {
       </Head>
       <main>
         <header>
-          <h1>{props.article.fields.name}</h1>
+          <h1>{name}</h1>
           <small>{time}</small>
         </header>
         <hr />
-        <div>
-          {documentToReactComponents(props.article.fields.body, options)}
-        </div>
+        <div>{documentToReactComponents(body, options)}</div>
       </main>
     </>
   );
