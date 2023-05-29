@@ -1,6 +1,8 @@
+import { useContext } from "react";
 import Head from "next/head";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS } from "@contentful/rich-text-types";
+import AppContext from "../../context/AppContext";
 import data from "../../public/data.json";
 
 export function getStaticPaths() {
@@ -23,13 +25,26 @@ export function getStaticProps(context) {
   return {
     props: {
       article,
+      slug: context.params.slug.join(""),
     },
   };
 }
 
 export default function Home(props) {
   if (!props || !props?.article?.fields?.name) return null;
-  const date = new Date(props.article.sys.updatedAt);
+  const { data: previewData, preview } = useContext(AppContext);
+  let previewArticle = null;
+  if (preview) {
+    previewArticle = previewData.fields.articles.filter(
+      ({ fields: { slug } }) => {
+        return slug === props.slug;
+      }
+    )?.[0];
+  }
+
+  const date = new Date(
+    preview ? previewArticle.sys.updatedAt : props.article.sys.updatedAt
+  );
   const isoDate = date.toISOString();
   const time = isoDate.substring(0, 10);
   const options = {
@@ -44,7 +59,7 @@ export default function Home(props) {
       },
     },
   };
-  const { body, name } = props.article.fields;
+  const { body, name } = preview ? previewArticle.fields : props.article.fields;
   const titleName = `${name} - Tej`;
   return (
     <>

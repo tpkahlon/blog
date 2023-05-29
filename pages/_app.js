@@ -2,13 +2,34 @@ import Image from "next/image";
 import Link from "next/link";
 import "../styles/globals.scss";
 import styles from "../styles/Home.module.scss";
+import AppContext from "../context/AppContext";
+import { useState } from "react";
 
 function MyApp({ Component, pageProps }) {
+  const [preview, setPreview] = useState(false);
+  const [data, setData] = useState(null);
+  const handleClick = async () => {
+    const data = await fetch(`/api/data`);
+    const parsedData = await data.json();
+    setPreview(true);
+    setData(parsedData);
+  };
   return (
-    <>
+    <AppContext.Provider
+      value={{
+        data,
+        preview,
+        setData,
+      }}
+    >
       <Component {...pageProps} />
       <div>
         <header>
+          {process.env.ENVIRONMENT === "local" ? (
+            <button className={styles.refresh} onClick={() => handleClick()}>
+              Refresh
+            </button>
+          ) : null}
           <nav role="navigation" className={styles.nav}>
             <Link href="/" className="button">
               Home
@@ -43,7 +64,7 @@ function MyApp({ Component, pageProps }) {
           </div>
         </header>
       </div>
-    </>
+    </AppContext.Provider>
   );
 }
 

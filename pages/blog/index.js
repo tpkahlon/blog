@@ -1,10 +1,14 @@
+import { useContext } from "react";
 import Link from "next/link";
 import Head from "next/head";
 import data from "../../public/data.json";
 import styles from "../../styles/Home.module.scss";
+import AppContext from "../../context/AppContext";
 
 export default function Home() {
-  const articles = data.fields.articles.map(
+  const { data: previewData, preview } = useContext(AppContext);
+  const allArticles = preview ? previewData.fields.articles : data.fields.articles;
+  const articles = allArticles.map(
     ({ fields: { name, slug }, sys: { id, updatedAt } }) => {
       const date = new Date(updatedAt);
       const isoDate = date.toISOString();
