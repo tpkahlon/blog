@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import "../styles/globals.scss";
 import styles from "../styles/Home.module.scss";
+import { isLocal } from "../constants";
 import AppContext from "../context/AppContext";
 import { useState } from "react";
 
@@ -25,7 +26,7 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <div>
         <header>
-          {process.env.ENVIRONMENT === "local" ? (
+          {isLocal ? (
             <button className={styles.refresh} onClick={() => handleClick()}>
               Refresh
             </button>

@@ -91,18 +91,7 @@ export default function Home() {
           <p>
             You can see all of my articles&nbsp;
             <Link href="/blog">here</Link>.
-            {/* <Link href="/blog">here</Link>. Here are some notable ones: */}
           </p>
-          {/* <ul>
-            <li>
-              <Link
-                href="/article/what-are-pages-in-nextjs"
-                className={styles.link}
-              >
-                <strong>What are Pages in Next.js?:</strong>
-              </Link>
-            </li>
-          </ul> */}
         </div>
       </main>
     </>
