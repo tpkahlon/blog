@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import Link from "next/link";
 import Head from "next/head";
-import deliveryData from "../../public/data.json";
-import styles from "../../styles/Home.module.scss";
 import AppContext from "../../context/AppContext";
+import Blog from "../../components/Blog";
+import deliveryData from "../../public/data.json";
 
 export default function Home() {
   const { previewData } = useContext(AppContext);
@@ -29,18 +29,7 @@ export default function Home() {
       <Head>
         <title>Blog - Tej</title>
       </Head>
-      <main className={styles.main}>
-        <header>
-          <h1>Blog</h1>
-          <p>
-            Here on this page, you will find a list of all the articles I have
-            written and published.
-          </p>
-        </header>
-        <hr />
-        <h2>Archive</h2>
-        <div className={styles.articles}>{articles}</div>
-      </main>
+      <Blog articles={articles} />
     </>
   );
 }

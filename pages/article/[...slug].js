@@ -1,8 +1,7 @@
 import { useContext } from "react";
 import Head from "next/head";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
-import { BLOCKS } from "@contentful/rich-text-types";
 import AppContext from "../../context/AppContext";
+import Article from "../../components/Article";
 import deliveryData from "../../public/data.json";
 
 export function getStaticPaths() {
@@ -43,33 +42,19 @@ export default function Home(props) {
   const date = new Date(article.sys.updatedAt);
   const isoDate = date.toISOString();
   const time = isoDate.substring(0, 10);
-  const options = {
-    renderNode: {
-      [BLOCKS.QUOTE]: (node) => {
-        const code = node.content
-          .map((block) =>
-            block.content.map((element) => element.value).join("")
-          )
-          .join("\n");
-        return <pre>{code}</pre>;
-      },
-    },
-  };
   const { body, name } = article.fields;
   const titleName = `${name} - Tej`;
+  const options = {
+    body,
+    name,
+    time,
+  };
   return (
     <>
       <Head>
         <title>{titleName}</title>
       </Head>
-      <main>
-        <header>
-          <h1>{name}</h1>
-          <small>{time}</small>
-        </header>
-        <hr />
-        <div>{documentToReactComponents(body, options)}</div>
-      </main>
+      <Article {...options} />
     </>
   );
 }
