@@ -1,4 +1,4 @@
-export const isLocal = process.env.ENVIRONMENT === "LOCAL";
+export const isLocal = process.env.ENVIRONMENT === "local";
 
 export const devOptions = {
   environment: "master",
