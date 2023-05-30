@@ -43,9 +43,8 @@ export default function Home(props) {
       }
     )?.[0];
   }
-  const date = new Date(
-    preview ? previewArticle.sys.updatedAt : props.article.sys.updatedAt
-  );
+  const article = preview ? previewArticle : props.article;
+  const date = new Date(article.sys.updatedAt);
   const isoDate = date.toISOString();
   const time = isoDate.substring(0, 10);
   const options = {
@@ -60,7 +59,7 @@ export default function Home(props) {
       },
     },
   };
-  const { body, name } = preview ? previewArticle.fields : props.article.fields;
+  const { body, name } = article.fields;
   const titleName = `${name} - Tej`;
   return (
     <>

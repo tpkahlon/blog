@@ -21,7 +21,6 @@ function MyApp(props) {
       value={{
         preview,
         previewData,
-        setPreviewData,
       }}
     >
       <Component {...pageProps} />
