@@ -6,8 +6,8 @@ import deliveryData from "../public/data.json";
 import AppContext from "../context/AppContext";
 
 export default function Home() {
-  const { previewData, preview } = useContext(AppContext);
-  const data = preview ? previewData : deliveryData;
+  const { previewData } = useContext(AppContext);
+  const data = Boolean(previewData) ? previewData : deliveryData;
   return (
     <>
       <Head>

@@ -6,8 +6,8 @@ import styles from "../../styles/Home.module.scss";
 import AppContext from "../../context/AppContext";
 
 export default function Home() {
-  const { previewData, preview } = useContext(AppContext);
-  const articleList = preview
+  const { previewData } = useContext(AppContext);
+  const articleList = Boolean(previewData)
     ? previewData.fields.articles
     : deliveryData.fields.articles;
   const articles = articleList.map(

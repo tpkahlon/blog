@@ -12,8 +12,7 @@ const deliveryOptions = {
 };
 
 const defaultAppContext = {
-  preview: false,
-  previewData: null,
+  previewData: false,
 };
 
 const isPreview = process.env.NODE_ENV === "development";

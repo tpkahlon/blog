@@ -34,16 +34,12 @@ export function getStaticProps(context) {
 
 export default function Home(props) {
   if (!props || !props?.article?.fields?.name) return null;
-  const { previewData, preview } = useContext(AppContext);
-  let previewArticle = null;
-  if (preview) {
-    previewArticle = previewData.fields.articles.filter(
-      ({ fields: { slug } }) => {
+  const { previewData } = useContext(AppContext);
+  const article = Boolean(previewData)
+    ? previewData.fields.articles.filter(({ fields: { slug } }) => {
         return slug === props.slug;
-      }
-    )?.[0];
-  }
-  const article = preview ? previewArticle : props.article;
+      })?.[0]
+    : props.article;
   const date = new Date(article.sys.updatedAt);
   const isoDate = date.toISOString();
   const time = isoDate.substring(0, 10);
