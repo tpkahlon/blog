@@ -9,19 +9,19 @@ import { useState } from "react";
 function MyApp(props) {
   const { Component, pageProps } = props;
   const [preview, setPreview] = useState(false);
-  const [data, setData] = useState(null);
+  const [previewData, setPreviewData] = useState(null);
   const handleClick = async () => {
-    const data = await fetch(`/api/data`);
+    const data = await fetch(`/api/previewData`);
     const parsedData = await data.json();
     setPreview(true);
-    setData(parsedData);
+    setPreviewData(parsedData);
   };
   return (
     <AppContext.Provider
       value={{
-        data,
         preview,
-        setData,
+        previewData,
+        setPreviewData,
       }}
     >
       <Component {...pageProps} />

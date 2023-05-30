@@ -1,14 +1,16 @@
 import { useContext } from "react";
 import Link from "next/link";
 import Head from "next/head";
-import data from "../../public/data.json";
+import deliveryData from "../../public/data.json";
 import styles from "../../styles/Home.module.scss";
 import AppContext from "../../context/AppContext";
 
 export default function Home() {
-  const { data: previewData, preview } = useContext(AppContext);
-  const allArticles = preview ? previewData.fields.articles : data.fields.articles;
-  const articles = allArticles.map(
+  const { previewData, preview } = useContext(AppContext);
+  const articleList = preview
+    ? previewData.fields.articles
+    : deliveryData.fields.articles;
+  const articles = articleList.map(
     ({ fields: { name, slug }, sys: { id, updatedAt } }) => {
       const date = new Date(updatedAt);
       const isoDate = date.toISOString();

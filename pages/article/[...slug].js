@@ -3,10 +3,10 @@ import Head from "next/head";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS } from "@contentful/rich-text-types";
 import AppContext from "../../context/AppContext";
-import data from "../../public/data.json";
+import deliveryData from "../../public/data.json";
 
 export function getStaticPaths() {
-  const paths = data.fields.articles.map(({ fields: { slug } }) => {
+  const paths = deliveryData.fields.articles.map(({ fields: { slug } }) => {
     return {
       params: {
         slug: [slug],
@@ -19,9 +19,11 @@ export function getStaticPaths() {
   };
 }
 export function getStaticProps(context) {
-  const [article] = data.fields.articles.filter(({ fields: { slug } }) => {
-    return slug === context.params.slug.join("");
-  });
+  const [article] = deliveryData.fields.articles.filter(
+    ({ fields: { slug } }) => {
+      return slug === context.params.slug.join("");
+    }
+  );
   return {
     props: {
       article,
@@ -32,7 +34,7 @@ export function getStaticProps(context) {
 
 export default function Home(props) {
   if (!props || !props?.article?.fields?.name) return null;
-  const { data: previewData, preview } = useContext(AppContext);
+  const { previewData, preview } = useContext(AppContext);
   let previewArticle = null;
   if (preview) {
     previewArticle = previewData.fields.articles.filter(
@@ -41,7 +43,6 @@ export default function Home(props) {
       }
     )?.[0];
   }
-
   const date = new Date(
     preview ? previewArticle.sys.updatedAt : props.article.sys.updatedAt
   );

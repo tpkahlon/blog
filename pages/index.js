@@ -2,12 +2,12 @@ import { useContext } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.scss";
-import data from "../public/data.json";
+import deliveryData from "../public/data.json";
 import AppContext from "../context/AppContext";
 
 export default function Home() {
-  const { data: previewData, preview } = useContext(AppContext);
-  const renderData = preview ? previewData : data;
+  const { previewData, preview } = useContext(AppContext);
+  const data = preview ? previewData : deliveryData;
   return (
     <>
       <Head>
@@ -17,7 +17,7 @@ export default function Home() {
         <div>
           <header>
             <h1>Hello!</h1>
-            <p>{renderData.fields.name}</p>
+            <p>{data.fields.name}</p>
           </header>
           <hr />
           <h2>Development</h2>
