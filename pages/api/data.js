@@ -1,7 +1,7 @@
 const { createClient } = require("contentful");
-const { devOptions } = require("../../constants");
+const { previewOptions } = require("../../constants");
 export default async function handler(req, res) {
-  const client = createClient(devOptions);
+  const client = createClient(previewOptions);
   const data = await client.getEntries();
   const [siteEntry] = data.items.filter((entry) => {
     const contentType = entry.sys.contentType.sys.id;

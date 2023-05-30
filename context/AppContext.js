@@ -1,9 +1,6 @@
 import { createContext } from "react";
+import { defaultAppContext } from "../constants";
 
-const AppContext = createContext({
-  data: null,
-  preview: false,
-  setData: () => {},
-});
+const AppContext = createContext(defaultAppContext);
 
 export default AppContext;

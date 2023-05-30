@@ -2,11 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import "../styles/globals.scss";
 import styles from "../styles/Home.module.scss";
-import { isLocal } from "../constants";
 import AppContext from "../context/AppContext";
+import { isPreview } from "../constants";
 import { useState } from "react";
 
-function MyApp({ Component, pageProps }) {
+function MyApp(props) {
+  const { Component, pageProps } = props;
   const [preview, setPreview] = useState(false);
   const [data, setData] = useState(null);
   const handleClick = async () => {
@@ -26,8 +27,8 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
       <div>
         <header>
-          {isLocal ? (
-            <button className={styles.refresh} onClick={() => handleClick()}>
+          {isPreview ? (
+            <button className="refresh" onClick={() => handleClick()}>
               Refresh
             </button>
           ) : null}

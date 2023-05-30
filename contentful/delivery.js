@@ -1,8 +1,8 @@
 const fs = require("fs");
 const { createClient } = require("contentful");
-const { contentfulClient } = require("../constants");
+const { deliveryOptions } = require("../constants");
 
-const client = createClient(contentfulClient);
+const client = createClient(deliveryOptions);
 
 client.withoutUnresolvableLinks
   .getEntries()
