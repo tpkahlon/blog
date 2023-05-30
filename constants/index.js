@@ -15,7 +15,7 @@ const productionOptions = {
 
 const contentfulClient = isLocal ? devOptions : productionOptions;
 
-export default {
+module.exports = {
   contentfulClient,
   devOptions,
   isLocal,
