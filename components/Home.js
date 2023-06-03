@@ -26,7 +26,18 @@ const Home = () => {
         <ul>
           <li>
             <a
-              href="https://github.com/tpkahlon/jackal"
+              href="http://hnjobs.netlify.app"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              <strong>HNJobs</strong>
+            </a>
+            : Simple, easy to scroll list of jobs posted on HN - Who's hiring
+            thread.
+          </li>
+          <li>
+            <a
+              href="http://jackal.surge.sh"
               rel="noopener noreferrer"
               className={styles.link}
             >
