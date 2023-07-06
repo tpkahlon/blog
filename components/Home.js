@@ -26,6 +26,17 @@ const Home = () => {
         <ul>
           <li>
             <a
+              href="http://zero-to-high-school.vercel.app"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              <strong>Zero to High School</strong>
+            </a>
+            : Learn school subjects remotely, from Grade 1 to 12, following
+            NCERT curriculum. One touch away education.
+          </li>
+          <li>
+            <a
               href="http://hnjobs.netlify.app"
               rel="noopener noreferrer"
               className={styles.link}
